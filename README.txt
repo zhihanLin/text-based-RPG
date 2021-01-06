@@ -1,17 +1,4 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2513
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;\f2\froman\fcharset0 TimesNewRomanPSMT;
-}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c99971\c0;}
-{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
-{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
-{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
-\margl1440\margr1440\vieww17360\viewh9680\viewkind0
-\deftab593
-\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
-
-\f0\fs28 \cf2 \cb3 /*  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */\
+/*  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */\
 //                                                                                                                            //\
 //  idleRPG                                                                                                                   //\
 //                                                                                                                            //\
@@ -41,59 +28,6 @@
 //  * * * * * * * * * * * * * * * * * * * * * * * * * * * MENU CHOICE * * * * * * * * * * * * * * * * * * * * * * * * * * * * //\
 //                                                                                                                            //\
 //  Created by ZHIHAN LIN on 4/17/20.                                                                                         //\
-//  Copyright \'a9 2020 ZHIHAN LIN. All rights reserved.                                                                         //\
+//  Copyright \'a9 2020 ZHIHAN LIN. All rights reserved.                                                                      //\
 //                                                                                                                            //\
 //  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-\f1 \cb1 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab593\pardirnatural\partightenfactor0
-
-\fs24 \cf2 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab593\sl480\slmult1\pardirnatural\partightenfactor0
-
-\f2\fs36 \cf2 idleRPG - created by Zhihan Lin\cf0 \
-\
-This file indicates the location where each requirement is demonstrated.\
-\pard\pardeftab720\ri0\sl480\slmult1\partightenfactor0
-\cf0 Your final project should demonstrate: \
-\pard\pardeftab720\li720\fi-360\ri0\sl480\slmult1\partightenfactor0
-\ls1\ilvl0\cf0 \'95	Header files \
-\'95	Abstract Class  \
-	 \'97 class Entity\
-\'95	Subclasses  \
-	\'97 class Monster : public Entity; \
-	\'97 class Hero: public Entity;\
-\'95	Virtual function (in addition to \strike \strikec0 the pure virtual function\strike0\striked0 ) \
-	\'97 class Item has virtual function toString();\
-\'95	Inheritance\
-	\'97 class Monster : public Entity; \
-	\'97 class Hero: public Entity;\
-\'95	Polymorphism\
-	\'97 both Hero and Monster objects override 4 pure virtual functions from Entity\
-\'95	Pointers\
-	\'97 pointers are used within class Inventory\
-\'95	Static variables \
-\'95	Static functions\
-\'95	Exceptions\
-	\'97 Game::Menu() call customized Exception, InvalidMenuChoice\
-\'95	Templates\
-\pard\pardeftab720\li720\fi-360\ri0\sl480\slmult1\partightenfactor0
-\ls2\ilvl0\cf0 \'95	File I/O \
-	\'97 save and load use text file with random access\
-\'95	Overloaded << or >> operator\
-	\'97 << and >> are overloaded for file I/O\
-\'95	Overloaded operators (at least one additional)\
-	\'97 overloaded operator = is declared in class Hero and used in Game::load();\
-\pard\pardeftab720\li720\ri0\sl480\slmult1\partightenfactor0
-\cf0 \
-\pard\pardeftab720\ri0\sl480\slmult1\partightenfactor0
-\cf0 Extra points for:\
-\pard\pardeftab720\li720\fi-360\ri0\sl480\slmult1\partightenfactor0
-\ls3\ilvl0\cf0 \'95	Recursion\
-\'95	Linked lists / Stacks / Queues\
-	\'97 class Inventory is a customized linked list\
-	\'97 Game::Save() uses duque to temporarily store hero\'92s record\
-\'95	Binary search trees\
-\'95	Binary File with random access\
-\'95	A friend function not related to the << and >> operator\
-	\'97 class Dungeon is friend class to Hero and Entity\
-}
